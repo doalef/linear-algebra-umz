@@ -4,7 +4,8 @@
   "description": "A minimal Electron application for umz's linear algebra course by prof.Valinejad",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager ."
   },
   "license": "CC0-1.0",
   "devDependencies": {

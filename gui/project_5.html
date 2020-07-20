@@ -79,24 +79,30 @@
 				></textarea>
 				<input
 					class="input ta-input hide"
-					type="text"
+					type="number"
 					placeholder="N"
+					value="20"
 					style="margin-top: 10px;"
 				/>
 				<input
 					class="input ta-input hide"
-					type="text"
+					type="number"
 					placeholder="epsilon"
+					value="1e-5"
 					style="margin-top: 10px;"
 				/>
-				<button class="button is-primary" style="margin-top: 20px;">
+				<button
+					id="exec5"
+					class="button is-primary"
+					style="margin-top: 20px;"
+				>
 					Execute
 				</button>
 			</div>
 			<div class="column is-half-desktop is-half-tablet is-full-mobile">
 				<h1 class="title is-5">Execution - Output</h1>
 
-				<pre>No Output available!</pre>
+				<pre id="output-5">No Output available!</pre>
 				<button class="button" id="export5" style="margin-top: 20px;">
 					Export Results
 				</button>
