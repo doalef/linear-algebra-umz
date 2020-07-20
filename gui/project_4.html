@@ -1,0 +1,70 @@
+<head>
+	<link rel="stylesheet" href="./styles/bulma.min.css" />
+	<link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="columns">
+			<div class="column is-half-desktop is-half-tablet is-full-mobile">
+				<h1 class="title is-4" style="margin-bottom: 0;">
+					Curve Fitting (Project 4)
+				</h1>
+				<a href="index.html">(back to main)</a>
+				<p class="subtitle is-6 subtitle-extras" class="">
+					Curve fitting is the process of constructing a curve,
+					or mathematical function, that has the best fit to a series
+					of data points, possibly subject to constraints.
+					Curve fitting can involve either interpolation, where
+					an exact fit to the data is required, or smoothing, in
+					which a "smooth" function is constructed that approximately
+					fits the data. A related topic is regression
+					analysis, which focuses more on questions of
+					statistical inference such as how much uncertainty is
+					present in a curve that is fit to data observed with random
+					errors. Fitted curves can be used as an aid for data
+					visualization, to infer values of a function where
+					no data are available, and to summarize the
+					relationships among two or more variables. Extrapolation
+					refers to the use of a fitted curve beyond the range of the
+					observed data, and is subject to a degree of
+					uncertainty since it may reflect the method used to
+					construct the curve as much as it reflects the observed
+					data. <br>Source: Wikipedia
+				</p>
+			</div>
+			<div class="column is-half-desktop is-half-tablet is-full-mobile">
+				<h1 class="title is-5">Built-in Data Set</h1>
+				<div class="tabs">
+					<div class="table-container">
+                        <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+                            <thead>
+                                <tr>
+                                  <th>Time</th>
+                                  <th>Velocity</th>
+                                </tr>
+                              </thead>
+                              <tbody id="table-body"></tbody>
+                        </table>
+                      </div>
+				</div>
+			</div>
+		</div>
+
+		<!-- EXECUTION -->
+		<div class="columns" style="margin-top: 60px;">
+			<div class="column is-half-desktop is-half-tablet is-full-mobile">
+				<h1 class="title is-5">Execution - Input</h1>
+				<button id="exec-4" class="button is-primary" style="margin-top: 20px;">
+					Execute
+				</button>
+			</div>
+			<div class="column is-half-desktop is-half-tablet is-full-mobile">
+				<h1 class="title is-5">Execution - Output</h1>
+
+				<pre id="nooutput-4" >No Output available!</pre>
+				<pre id="output-4" class="hide" ></pre>
+			</div>
+		</div>
+	</div>
+	<script src="../connectors/project4.js"></script>
+</body>

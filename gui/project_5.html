@@ -1,0 +1,107 @@
+<head>
+	<link rel="stylesheet" href="./styles/bulma.min.css" />
+	<link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="columns">
+			<div class="column is-half-desktop is-half-tablet is-full-mobile">
+				<h1 class="title is-4" style="margin-bottom: 0;">
+					Successive over-relaxation (Project 5)
+				</h1>
+				<a href="index.html">(back to main)</a>
+				<p class="subtitle is-6 subtitle-extras" class="">
+					In numerical linear algebra, the method of successive
+					over-relaxation (SOR) is a variant of the Gauss–Seidel
+					method for solving a linear system of equations, resulting
+					in faster convergence. A similar method can be used for any
+					slowly converging iterative process. It was devised
+					simultaneously by David M. Young, Jr. and by Stanley P.
+					Frankel in 1950 for the purpose of automatically solving
+					linear systems on digital computers. Over-relaxation methods
+					had been used before the work of Young and Frankel. An
+					example is the method of Lewis Fry Richardson, and the
+					methods developed by R. V. Southwell. However, these methods
+					were designed for computation by human calculators,
+					requiring some expertise to ensure convergence to the
+					solution which made them inapplicable for programming on
+					digital computers. These aspects are discussed in the thesis
+					of David M. Young, Jr. <br />Source: Wikipedia
+				</p>
+			</div>
+			<div class="column is-half-desktop is-half-tablet is-full-mobile">
+				<h1 class="title is-5">Built-in Data Sets</h1>
+				<div class="tabs">
+					<ul>
+						<li class="bidsl-5-1 is-active"><a>Data Set 1</a></li>
+						<li class="bidsl-5-2"><a>Data Set 2</a></li>
+					</ul>
+				</div>
+				<h1 class="title is-6">A:</h1>
+				<pre class="bidsl-5-a"></pre>
+				<h1 class="title is-6" style="margin-top: 20px;">b:</h1>
+				<pre class="bidsl-5-b"></pre>
+			</div>
+		</div>
+
+		<!-- EXECUTION -->
+		<div class="columns" style="margin-top: 60px;">
+			<div class="column is-half-desktop is-half-tablet is-full-mobile">
+				<h1 class="title is-5">Execution - Input</h1>
+				<div class="control">
+					<label>
+						<input
+							class="radio1"
+							type="radio"
+							name="set1"
+							checked
+						/>
+						Use Data-Set 1
+					</label>
+					<label>
+						<input class="radio2" type="radio" name="set2" />
+						Use Data-Set 2
+					</label>
+					<label>
+						<input class="radio3" type="radio" name="set2" />
+						Use Custom Data
+					</label>
+				</div>
+				<textarea
+					class="textarea ta-input hide"
+					placeholder="A, requires 2D array"
+					style="margin-top: 10px;"
+				></textarea>
+				<textarea
+					class="textarea ta-input hide"
+					placeholder="b, requires an array"
+					style="margin-top: 10px;"
+				></textarea>
+				<input
+					class="input ta-input hide"
+					type="text"
+					placeholder="N"
+					style="margin-top: 10px;"
+				/>
+				<input
+					class="input ta-input hide"
+					type="text"
+					placeholder="epsilon"
+					style="margin-top: 10px;"
+				/>
+				<button class="button is-primary" style="margin-top: 20px;">
+					Execute
+				</button>
+			</div>
+			<div class="column is-half-desktop is-half-tablet is-full-mobile">
+				<h1 class="title is-5">Execution - Output</h1>
+
+				<pre>No Output available!</pre>
+				<button class="button" id="export5" style="margin-top: 20px;">
+					Export Results
+				</button>
+			</div>
+		</div>
+	</div>
+	<script src="../connectors/project5.js"></script>
+</body>

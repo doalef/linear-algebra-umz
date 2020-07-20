@@ -1,0 +1,144 @@
+<head>
+	<link rel="stylesheet" href="./styles/bulma.min.css" />
+	<link rel="stylesheet" href="./styles/main.css" />
+</head>
+<body>
+	<div class="container">
+		<div class="columns">
+			<div class="column is-half-desktop is-half-tablet is-full-mobile">
+				<h1 class="title is-4" style="margin-bottom: 0;">
+					Gaussian Elimination (Project 1)
+				</h1>
+				<a href="index.html">(back to main)</a>
+				<p class="subtitle is-6 subtitle-extras" class="">
+					Gaussian elimination, also known as row reduction, is an
+					algorithm in linear algebra for solving a system of linear
+					equations. It is usually understood as a sequence of
+					operations performed on the corresponding matrix of
+					coefficients. This method can also be used to find the rank
+					of a matrix, to calculate the determinant of a matrix, and
+					to calculate the inverse of an invertible square matrix. The
+					method is named after Carl Friedrich Gauss (1777–1855). Some
+					special cases of the method - albeit presented without proof
+					- were known to Chinese mathematicians as early as circa 179
+					CE. To perform row reduction on a matrix, one uses a
+					sequence of elementary row operations to modify the matrix
+					until the lower left-hand corner of the matrix is filled
+					with zeros, as much as possible. There are three types of
+					elementary row operations: Swapping two rows, Multiplying a
+					row by a nonzero number, Adding a multiple of one row to
+					another row. Using these operations, a matrix can always be
+					transformed into an upper triangular matrix, and in fact one
+					that is in row echelon form. Once all of the leading
+					coefficients (the leftmost nonzero entry in each row) are 1,
+					and every column containing a leading coefficient has zeros
+					elsewhere, the matrix is said to be in reduced row echelon
+					form. This final form is unique; in other words, it is
+					independent of the sequence of row operations used. For
+					example, in the following sequence of row operations (where
+					multiple elementary operations might be done at each step),
+					the third and fourth matrices are the ones in row echelon
+					form, and the final matrix is the unique reduced row echelon
+					form. Using row operations to convert a matrix into reduced
+					row echelon form is sometimes called Gauss–Jordan
+					elimination. Some authors use the term Gaussian elimination
+					to refer to the process until it has reached its upper
+					triangular, or (unreduced) row echelon form. For
+					computational reasons, when solving systems of linear
+					equations, it is sometimes preferable to stop row operations
+					before the matrix is completely reduced.
+					<br />Source: Wikipedia
+				</p>
+			</div>
+			<div class="column is-half-desktop is-half-tablet is-full-mobile">
+				<h1 class="title is-5">Built-in Data Set</h1>
+				<div class="tabs">
+					<ul>
+						<li class="bidsl-5-1 is-active"><a>Data Set 1</a></li>
+						<li class="bidsl-5-2"><a>Data Set 2</a></li>
+					</ul>
+				</div>
+				<h1 class="title is-6">A:</h1>
+				<pre class="bidsl-5-a"></pre>
+				<h1 class="title is-6" style="margin-top: 20px;">b:</h1>
+				<pre class="bidsl-5-b"></pre>
+			</div>
+		</div>
+
+		<!-- EXECUTION -->
+		<div class="columns" style="margin-top: 60px;">
+			<div class="column is-half-desktop is-half-tablet is-full-mobile">
+				<h1 class="title is-5">Execution - Input</h1>
+				<div class="control">
+					<label>
+						<input
+							class="radio1"
+							type="radio"
+							name="set1"
+							checked
+						/>
+						Use Data-Set 1
+					</label>
+					<label>
+						<input class="radio2" type="radio" name="set2" />
+						Use Data-Set 2
+					</label>
+					<label>
+						<input class="radio3" type="radio" name="set3" />
+						Enter Custom Data
+					</label>
+					<label>
+						<input class="radio4" type="radio" name="set4" />
+						Upload Data Set
+					</label>
+				</div>
+				<div>
+					<textarea
+						class="textarea ta-input hide"
+						placeholder="A, requires 2D array"
+						style="margin-top: 10px;"
+						id="inputA"
+					></textarea>
+					<textarea
+						class="textarea ta-input hide"
+						placeholder="b, requires an array"
+						style="margin-top: 10px;"
+						id="inputB"
+					></textarea>
+				</div>
+				<div>
+					<div class="file hide" style="margin-top: 20px;">
+						<button id="ds-1" class="button" >
+							Upload A's Data Set
+						</button>
+					</div>
+					<div class="file hide" style="margin-top: 20px;">
+						<button id="ds-2" class="button" >
+							Upload b's Data Set
+						</button>
+					</div>
+					<pre id="showA" class="file hide" style="margin-top: 20px;">No input is available!</pre>
+					<pre id="showB" class="file hide" style="margin-top: 20px;">No input is available!</pre>
+				</div>
+				<button
+					id="exec-1"
+					class="button is-primary"
+					style="margin-top: 20px;"
+				>
+					Execute
+				</button>
+			</div>
+			<div class="column is-half-desktop is-half-tablet is-full-mobile">
+				<h1 class="title is-5">Execution - Output</h1>
+
+				<pre id="nooutput-4">No Output available!</pre>
+				<pre id="output-4" class="hide"></pre>
+
+				<button class="button" id="export1" style="margin-top: 20px;">
+					Export Results
+				</button>
+			</div>
+		</div>
+	</div>
+	<script src="../connectors/project1.js"></script>
+</body>
