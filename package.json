@@ -9,7 +9,7 @@
   },
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^1.8.4"
+    "electron": "^13.6.6"
   },
   "dependencies": {
     "js-beautify": "^1.11.0",
